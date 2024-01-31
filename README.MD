@@ -18,3 +18,5 @@ To build the Docker image, navigate to the project directory and run the followi
 
 ```bash
 docker build -t pythonexamdocker .
+
+ docker run -v $(pwd)/images:/app/images -v $(pwd)/output:/app/output -e PDF_NAME=imagesss pythonexamdocker images
